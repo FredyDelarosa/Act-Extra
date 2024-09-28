@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { StudentService } from '../../student.service';
 
 @Component({
   selector: 'app-student-selector',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './student-selector.component.html',
   styleUrl: './student-selector.component.scss'
 })

@@ -9,10 +9,10 @@
         <li *ngFor="let student of studentService.getequipo2()">{{ student }}</li>
     </ul>
 
-    <button (click)="selectStudents">Elegir</button>
+    <button (click)="selectStudents()">Elegir</button>
 
-    <div *ngFor="selectedPair">
+    <div *ngIf="selectedPair">
         <h3>Pareja seleccionada:</h3>
-        <p>{{ selectedPair?.student1}} y {{ selectedPair?.student2 }}</p>
+        <p>{{ selectedPair.student1}} y {{ selectedPair.student2 }}</p>
     </div>
 </div>
