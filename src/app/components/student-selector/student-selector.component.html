@@ -1,1 +1,18 @@
-<p>student-selector works!</p>
+<div>
+    <h2>Equipo 1</h2>
+    <ul>
+        <li *NgFor="let student of studentService.getequipo1()">{{ student }}</li>
+    </ul>
+
+    <h2>Equipo 2</h2>
+    <ul>
+        <li *NgFor="let student of studentService.getequipo2()">{{ student }}</li>
+    </ul>
+
+    <button (click)="selectStudents">Elegir</button>
+
+    <div *NgFor="selectedPair">
+        <h3>Pareja seleccionada:</h3>
+        <p>{{ selectedPair?.student1}} y {{ selectedPair?.student2 }}</p>
+    </div>
+</div>
