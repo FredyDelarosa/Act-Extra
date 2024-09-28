@@ -11,9 +11,9 @@ import { StudentService } from '../../student.service';
 export class StudentSelectorComponent {
   selectedPair: {student1: string, student2: string} | null = null;
 
-  constructor(public StudentService: StudentService) {}
+  constructor(public studentService: StudentService) {}
 
   selectStudents() {
-    this.selectedPair = this.StudentService.selectRandomStudents();
+    this.selectedPair = this.studentService.selectRandomStudents();
   }
 }

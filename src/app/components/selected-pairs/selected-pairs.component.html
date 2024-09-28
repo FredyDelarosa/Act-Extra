@@ -1,0 +1,8 @@
+<div>
+    <h2>Parejas Seleccionadas:</h2>
+    <ul>
+        <li *NgFor="let pair of studentService.getPairs()">
+            {{ pair.student1 }} y {{pair.student2}}
+        </li>
+    </ul>
+</div>
