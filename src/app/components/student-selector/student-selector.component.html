@@ -1,18 +1,27 @@
 <div>
-    <h2>Equipo 1</h2>
-    <ul>
-        <li *ngFor="let student of studentService.getequipo1()">{{ student }}</li>
-    </ul>
-
-    <h2>Equipo 2</h2>
-    <ul>
-        <li *ngFor="let student of studentService.getequipo2()">{{ student }}</li>
-    </ul>
-
-    <button (click)="selectStudents()">Elegir</button>
-
-    <div *ngIf="selectedPair">
-        <h3>Pareja seleccionada:</h3>
-        <p>{{ selectedPair.student1}} y {{ selectedPair.student2 }}</p>
+    <div class="teams-container">
+      <div class="team">
+        <h2>Equipo 1</h2>
+        <ul>
+          <li *ngFor="let student of studentService.getequipo1()">{{ student }}</li>
+        </ul>
+      </div>
+  
+      <div class="selection-area">
+        <div *ngIf="selectedPair">
+          <h3>Pareja seleccionada:</h3>
+          <p>{{ selectedPair.student1 }} y {{ selectedPair.student2 }}</p>
+        </div>
+        
+        <button (click)="selectStudents()">Elegir Pareja</button>
+      </div>
+  
+      <div class="team">
+        <h2>Equipo 2</h2>
+        <ul>
+          <li *ngFor="let student of studentService.getequipo2()">{{ student }}</li>
+        </ul>
+      </div>
     </div>
-</div>
+  </div>
+  
