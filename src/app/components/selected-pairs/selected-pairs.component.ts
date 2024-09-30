@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importar CommonModule
+import { CommonModule } from '@angular/common';
 import { StudentService } from '../../student.service';
 
 @Component({
   selector: 'app-selected-pairs',
   standalone: true,
-  imports: [CommonModule], // Agregar CommonModule aquí para usar *ngFor
+  imports: [CommonModule],
   templateUrl: './selected-pairs.component.html',
   styleUrls: ['./selected-pairs.component.scss']
 })

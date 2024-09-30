@@ -6,9 +6,9 @@ div {
   }
   
 .teams-container {
-    display: flex; // Flexbox para organizar los equipos y el contenido central
-    justify-content: space-between; // Equipos a los extremos, contenido central en el medio
-    align-items: flex-start; // Alinear los elementos al principio (parte superior)
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start; 
     gap: 20px;
   }
   
@@ -35,7 +35,7 @@ div {
         padding: 10px;
         margin: 5px 0;
         border-radius: 5px;
-        color: #555; // Color gris oscuro para los nombres
+        color: #555; 
         font-size: 1rem;
         text-align: center;
         transition: background-color 0.2s;
